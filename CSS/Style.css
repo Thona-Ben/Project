@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav-bar{
+    height: 100px;
+    background-color: black;
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Vertically align items in the center */
+    padding: 0 100px; /* Add horizontal padding */
+    justify-content: space-between;
+}
+.logo{
+    height: 80px;
+    pointer-events: none;
+}
+.nav{
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between list items */
+    text-align: center;
+    list-style-type: none;
+    flex-grow: 1; /* Allow the nav to grow and take up remaining space */
+    font-size: 30px;
+}
+.nav li {
+    flex-grow: 1; /* Allow list items to grow and take up equal space */
+}
+
+a{
+    text-decoration: none;
+    color: white; /* Add color for better visibility */
+
+}
+li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px;
+}
